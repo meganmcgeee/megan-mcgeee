@@ -1,3 +1,33 @@
+
+/*Navbar*/
+
+.navbar {
+  background: rgba(0,0,0,0);
+  position: fixed;
+  top:0;
+  left: 0;
+  width:100%;
+  height: $navbar-height;
+  padding-left:$gutter;
+  box-shadow: none;
+}
+
+  a {
+    display: block;
+    float: right;
+    line-height: 10px;
+    padding-right:5%;
+    color: black;
+    text-decoration: none;
+    font-family: sans-serif;
+    padding-top: 3%;
+  }
+
+}
+
+
+
+/*Logo*/
 #img{
   max-height: 300px;
   max-width: 200px;
