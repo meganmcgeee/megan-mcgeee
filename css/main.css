@@ -33,3 +33,11 @@
   max-width: 200px;
 
 }
+
+/*Typewriting Stylign*/
+.test{
+  color: black;
+  font-size: 30px;
+  line-height: 100px;
+  font-family: sans-serif;
+}
