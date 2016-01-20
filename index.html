@@ -63,14 +63,19 @@
 
 
 
-<!-- End Document
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
 <!-- Javascript
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/bacon/dist/Bacon.min.js"></script>
+<script>
+  $('#logo')
+    .asEventStream('mouseover')
+    .subscribe(() => alert("Hey! Hands off!"));
+</script>
+
+<!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-
-  <script src="bower_components/jquery/dist/jquery.min.js"></script>
-  <script src="bower_components/bacon/dist/Bacon.min.js"></script>
-
 </body>
 </html>
