@@ -12,7 +12,7 @@
   box-shadow: none;
 }
 
-  a {
+.navbar  a {
     display: block;
     float: right;
     line-height: 10px;
