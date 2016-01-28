@@ -1,1 +1,46 @@
-<div id="render-target">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Megan McGee</title>
+  <meta name="description" content="This is my personal website.">
+  <meta name="author" content="Megan McGee">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <div id="render-target"></div>
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/bacon/dist/Bacon.min.js" ></script>
+  <script>
+    $('#logo').asEventStream('mouseover').subscribe(() => alert("Hey! Hands off!"));
+    // Text typewriting magic
+    (function() {
+      var arr,
+        elem,
+        prop;
+      elem = $('.test');
+      arr = 'Megan McGee is a Front-End Web Dev who just loves Javascript of all kinds, data streams, and jokes about functions. Back-end in training. Closing the gender gap, one bit at a time. Get souped.'.split('');
+      prop = Bacon.sequentially(50, arr).scan('', function(a, b) {
+        return a + b;
+      });
+      prop.assign(elem, 'text');
+    }.call(this));
+  </script>
+  <script src="bundle.js"></script>
+</body>
+</html>

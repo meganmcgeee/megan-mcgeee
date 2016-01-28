@@ -1,4 +1,6 @@
-const Navbar = React.create({
+import React from 'react';
+
+const Navbar = React.createClass({
   render() {
     return (
       <div className='navbar'>

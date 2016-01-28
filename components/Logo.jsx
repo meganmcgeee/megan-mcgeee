@@ -1,16 +1,19 @@
-const Logo = React.create({
+import React from 'react';
+
+const Logo = React.createClass({
   render() {
-    <div class="container" style="margin-left: 2%">
-      <div class="row" style="margin: 2%">
-       <div class="one-half column">
-         <div class="one-third column .u-pull-left" style="margin-top: 15%">
-             <img id="logo" src="img/meganpants.png">
+    return (
+      <div className="container" style={{marginLeft: "2%"}}>
+        <div className="row" style={{margin: "2%"}}>
+         <div className="one-half column">
+           <div className="one-third column .u-pull-left" style={{marginTop: "15%"}}>
+               <img id="logo" src="img/meganpants.png" />
+           </div>
          </div>
        </div>
      </div>
-   </div>
-  );
-},
+    );
+ },
 });
 
 export default Logo;
