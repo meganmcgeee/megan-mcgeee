@@ -32,3 +32,5 @@ const About = React.create({
     );
   },
 });
+
+export default About;

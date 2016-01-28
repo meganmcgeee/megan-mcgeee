@@ -12,3 +12,5 @@ const Logo = React.create({
   );
 },
 });
+
+export default Logo;
