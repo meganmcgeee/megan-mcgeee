@@ -97,8 +97,8 @@
 	      'div',
 	      { className: 'app' },
 	      _react2.default.createElement(_Navbar2.default, null),
-	      _react2.default.createElement(_Logo2.default, null),
-	      _react2.default.createElement(_About2.default, null)
+	      _react2.default.createElement(_About2.default, null),
+	      _react2.default.createElement(_Logo2.default, null)
 	    );
 	  }
 	});
@@ -19695,7 +19695,7 @@
 /* 159 */
 /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
+	'use strict';
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -19708,18 +19708,18 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	var About = _react2.default.createClass({
-	  displayName: "About",
+	  displayName: 'About',
 	  render: function render() {
 	    return _react2.default.createElement(
-	      "div",
-	      { className: "about" },
+	      'div',
+	      { className: 'about' },
 	      _react2.default.createElement(
-	        "div",
-	        { className: "one-half column" },
+	        'div',
+	        { className: 'one-half column' },
 	        _react2.default.createElement(
-	          "div",
-	          { className: "row", style: { marginTop: "25%" } },
-	          _react2.default.createElement("div", { className: "test" })
+	          'div',
+	          { className: 'row', style: { marginTop: '25%' } },
+	          _react2.default.createElement('div', { className: 'test' })
 	        )
 	      )
 	    );

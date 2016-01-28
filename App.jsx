@@ -8,8 +8,8 @@ const App = React.createClass({
     return (
       <div className='app'>
         <Navbar />
-        <Logo />
         <About />
+        <Logo />
       </div>
     );
   },
